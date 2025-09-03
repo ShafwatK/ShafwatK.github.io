@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Shafwat Khan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* ===========================
+       Rain effect styles
+       =========================== */
+
+    /* Full-screen rain layer */
+    .rain {
+      position: fixed;   /* Stays fixed while scrolling */
+      top: 0;            /* Align to top of viewport */
+      left: 0;           /* Align to left of viewport */
+      width: 100%;       /* Cover full width */
+      height: 100%;      /* Cover full height */
+      overflow: hidden;  /* Hide any drops outside view */
+      z-index: 0;        /* Keep behind main content */
+      pointer-events: none; /* So user can still click links below */
+    }
+
+    /* Single raindrop style */
+    .drop {
+      position: absolute; /* Allows free placement anywhere in the container */
+      width: 2px;         /* Thin drop width */
+      height: 15px;       /* Drop length */
+      background: white;  /* Drop color */
+      opacity: 0.5;       /* Slight transparency for subtle look */
+      transform: rotate(20deg); /* Tilted to make rain look diagonal */
+      animation: fall linear infinite; /* Runs the falling animation forever */
+    }
+
+    /* Keyframes for raindrop falling animation */
+    @keyframes fall {
+      0% {
+        /* Start slightly above screen, straight down */
+        transform: translateY(-20px) translateX(0) rotate(20deg);
+        opacity: 0; /* Invisible at start */
+      }
+      10% {
+        opacity: 0.5; /* Fade in */
+      }
+      100% {
+        /* Move far below screen while drifting left */
+        transform: translateY(110vh) translateX(-50px) rotate(20deg);
+        opacity: 0; /* Fade out at bottom */
+      }
+    }
+  </style>
+</head>
+<body class="bg-black flex items-center justify-center min-h-screen relative">
+  <!-- 
+    Tailwind body classes:
+    - bg-black: Black background color
+    - flex: Enables flexbox layout
+    - items-center: Vertically center content
+    - justify-center: Horizontally center content
+    - min-h-screen: Minimum height fills full viewport
+    - relative: So child elements with absolute positioning can be placed relative to body
+  -->
+
+  <!-- Rain layer (empty, will be filled with drops via JS) -->
+  <div class="rain"></div>
+
+  <!-- Main content box -->
+  <section class="bg-white text-black p-10 rounded-2xl max-w-xl w-full text-center shadow-lg relative z-10">
+    <!-- 
+      Section styling:
+      - bg-white: White background
+      - text-black: Black text
+      - p-10: Padding
+      - rounded-2xl: More rounded corners
+      - max-w-xl: Limit width for readability
+      - w-full: Take full available width up to max
+      - text-center: Center text alignment
+      - shadow-lg: Adds shadow for depth
+      - relative z-10: Keeps content above rain layer
+    -->
+    <h1 class="text-5xl font-bold mb-4">Hi, I'm Shafwat Khan</h1>
+    <p class="text-lg mb-8">
+      Engineering student at the University of Toronto. Aspiring engineer, looking to get practical experiences and grow my interest in the field.
+    </p>
+    <div class="space-x-4">
+      <!-- Navigation buttons -->
+      <a href="projects.html" class="bg-[#0D1B2A] text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        Projects
+      </a>
+      <a href="experiences.html" class="bg-[#7B1E23] text-white px-6 py-3 rounded-lg hover:bg-green-700 transition">
+        Experiences
+      </a>
+    </div>
+  </section>
+
+  <!-- JavaScript to generate random raindrops -->
+  <script>
+    const rain = document.querySelector('.rain'); // Select the rain container
+    const numDrops = 60; // Number of raindrops to create
+
+    for (let i = 0; i < numDrops; i++) {
+      const drop = document.createElement('div'); // Create a div for the drop
+      drop.classList.add('drop'); // Add drop styling
+
+      // Random horizontal position (0 to 100% of viewport width)
+      drop.style.left = Math.random() * 100 + 'vw';
+
+      // Random animation duration between 1s and 3s
+      drop.style.animationDuration = (Math.random() * 2 + 1) + 's';
+
+      // Random delay so drops don't start at the same time
+      drop.style.animationDelay = Math.random() * 3 + 's';
+
+      // Add drop to the rain container
+      rain.appendChild(drop);
+    }
+  </script>
+</body>
+</html>
