@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiences - Shafwat Khan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Header -->
+<header class="relative p-20 bg-green-600 text-white flex items-center">
+  <!-- Centered title --> 
+  <h1 class="absolute left-1/2 transform -translate-x-1/2 text-2xl font-bold">
+    Arduino Shop alarm
+  </h1>
+
+  <!-- Button on the right -->
+  <a href="PROJECTS.HTML" class="ml-auto bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-100">
+    Back to projects
+  </a>
+</header>
+<main class="p-6 text-black">
+  <p>
+    <strong style="font-size: 24px;">Introduction:</strong>  <br>
+        Before my term started the shop used to have an alarm set up to ring whenever it was time for break. 
+        The alarm stopped working and I was tasked with investigating why it was not working. 
+        After some investigation I realised that the circuit board of the clock itself was broken.
+        It was a programable clock that sent a pulse of electricity to the bell whenever it hit a certain time. 
+        I had the option to replace this but it costs a lot more than it needs to (approximately $300).
+        <br>
+
+    <strong style="font-size: 24px;">Research:</strong>  <br>
+    I started to look into different options and alternatives and I decided on using an Arduino.
+    I looked into how I would do my wiring, the existing bell used 24 Volts of AC power but it also worked with DC power. 
+    I used the existing transformer for the old clock to get the 24 Volts, this would be connected to the bell with a relay. 
+    The relay would be connected to an ESP32, the ESP32 would communicate with the relay to open and close it, the relay will also prevent the ESP32 from getting fried by the 24 volts.
+    That would turn the bell on and off.
+    Before making any purchases I decided to use Wokwi to simulate the circuit. The most important part was understanding which pins of the ESP 32 to use.
+    For the code I realised that I do not need an RTC as the ESP32 already has one built in I would just have to re synch it every couple hours on code (I chose 4 hours).
+    I also created an app on MIT app inventor, this app would allow people to set the alarms manuallay and also force the bell to start and stop ringing.
+
+    
+        <br>
+
+    <strong style="font-size: 24px;">Shopping list:</strong>  <br>
+    I had to decide what to purchase for the project, and the approximate costs.
+    The first thing was obviously the ESP32, next would be the relay to turn it on and off and also to prevent the higher voltage from going into the ESP32.
+    Next I would need the breadboard for testing as well as wire splitters and connection blocks.
+    After all the shopping was done the total price came out to under $100, effectively saving around $200. (Bell not included as we already had one).
+    All of this was bought from Sayal electronics
+        <br>
+
+    <strong style="font-size: 24px;">Installation:</strong>  <br>
+    The installation was probably the most tiring part of the project. 
+    First I measured and cutout approximately 25 feet of wire, this would be the distance from my "brain" to the bell.
+    The wire came in a casing with 8 indivisual wires braided together, I had to undo the braiding for all the wires and braid them into 2 groups of 4, this was a really long and tedious process.
+    Once this was done the connections were very simple. I installed the "brain" on the wall and the bell was installed in the ceilling at a position where the whole shop could hear it go off.
+    <br>
+    <strong style="font-size: 24px;">Results:</strong>  <br>
+    After 1 full day of testing the buzzer worked almost perfectly, there was a strange problem with the alarm going off twice. 
+    I realised I made a silly mistake in my code where I copy pasted the relay turning on and off twice. 
+    After I finished my internship at the company, the shop is still using the same buzzer system with no problems.
+
+  </p>
+</main>
+git config --global user.name "ShafwatK"
+git config --global user.email "shafwat2006@gmail.com"
