@@ -3,90 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experiences - Shafwat Khan</title>
+  <title>Welding Fan - Shafwat Khan</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
-  <!-- Header -->
-  <header class="relative p-20 bg-blue-700 text-white flex items-center">
-    <!-- Centered title --> 
-    <h1 class="absolute left-1/2 transform -translate-x-1/2 text-2xl font-bold">
-      Welding Fan
-    </h1>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
 
-    <!-- Button on the right -->
-    <a href="PROJECTS.HTML" class="ml-auto bg-white text-blue-700 hover:bg-gray-100 px-4 py-2 rounded hover:bg-gray-100">
-      Back to projects
+  <!-- Header -->
+  <header class="relative py-16 px-8 bg-gradient-to-r from-blue-600 to-blue-700 text-white flex items-center shadow-md">
+    <h1 class="absolute left-1/2 transform -translate-x-1/2 text-3xl font-bold tracking-wide">
+      Welding Fan Project
+    </h1>
+    <a href="PROJECTS.HTML" class="ml-auto border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-700 transition">
+      Back to Projects
     </a>
   </header>
 
-  <main class="p-6 text-black max-w-5xl mx-auto leading-relaxed space-y-6">
-    
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Introduction</h2>
-      <p>
-        The welding section at Sable Metal needed an exhaust fan to improve ventilation and air quality. The existing fume hoods did not draw in enough air.  
-        I was tasked with getting an exhaust fan installed in the welding booth. To start, I inspected the existing ventilation system to figure out the necessary steps.  
-        After some research and inspection, I realized I needed to:  <br>
-        - Calculate the CFM requirements for the booth  <br>
-        - Select an appropriate fan  <br>
-        - Design and fabricate a mount  <br>
-        - Install the fan
-      </p>
+  <main class="p-8 max-w-6xl mx-auto space-y-16">
+
+    <!-- Introduction -->
+    <section class="flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1 max-w-3xl">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-700">Introduction</h2>
+        <p>
+          The welding section at Sable Metal required improved ventilation. The existing fume hoods did not draw enough air, so I was tasked with installing a proper exhaust fan.  
+          I began by inspecting the current system and outlining the steps necessary for installation: calculate required CFM, select a suitable fan, design and fabricate a mount, and install the fan.
+        </p>
+      </div>
+      <div class="flex-shrink-0">
+        <img src="WELDING EXHAUST FAN.jpg" alt="Welding fan setup" class="w-96 h-64 object-cover rounded-xl shadow-lg">
+      </div>
     </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Research</h2>
-      <p>
-        Before choosing a fan, I needed to understand the basics of ventilation systems. I learned that one of the most important factors is the CFM (cubic feet per minute) rating of the fan. The exhaust fan must match the airflow of the intake fans; otherwise, it can overwork them.  
-        I also discovered that CFM ratings are usually measured with still air, but in practice, the exhaust would be pulling moving air. This meant I could use a fan with a slightly lower rating, as long as it wasn’t too low to cause backflow.  
-        Measuring the intake fans, I found each was rated at 1700 CFM. Since they were connected in parallel, the total airflow was still 1700 CFM, but with increased static pressure. Because static pressure wasn’t a concern in this case, my target was simply to match ~1700 CFM for the exhaust.
-      </p>
+    <!-- Research -->
+    <section class="bg-gray-100 rounded-xl p-8 shadow-sm flex flex-col md:flex-row-reverse items-center gap-10">
+      <div class="flex-1 max-w-3xl">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-700">Research</h2>
+        <p>
+          I analyzed ventilation basics and focused on CFM (cubic feet per minute) ratings. Matching the exhaust fan to the intake system is critical; otherwise, it could overwork the existing fans.  
+          The intake fans were rated at 1700 CFM each, connected in parallel, so the exhaust fan needed to match ~1700 CFM to balance the airflow effectively.
+        </p>
+      </div>
+      <div class="flex-shrink-0">
+        <img src="CAN-FILTERS_FAN.jpg" alt="Exhaust fan selection" class="w-96 h-64 object-cover rounded-xl shadow-lg">
+      </div>
     </section>
 
-<section>
-  <h2 class="text-2xl font-semibold mb-4">Fan Selection</h2>
-  <div class="flex flex-col md:flex-row items-center gap-6">
-    <!-- Text -->
-    <div class="flex-1">
-      <p>
-        I compared different fans by CFM ratings, price, and compatibility with the existing 12-inch duct.  
-        I learned that the intake fans had been purchased from All Grow Garden, a store close to us, so I started there. After reviewing options, I chose a wall-mount exhaust fan rated at 2000 CFM with a speed controller. This allowed me to adjust it down to around 1700 CFM, ensuring it matched the intake fans.  
-        The fan also came in a 12-inch size, which made installation straightforward.
-      </p>
-    </div>
-
-    <!-- Image -->
-    <div class="flex-shrink-0">
-      <img src="CAN-FILTERS_FAN.jpg" alt="Welding Fan Hanger" class="w-80 h-60 object-cover rounded shadow-lg">
-    </div>
-  </div>
-</section>
-
-
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Installation</h2>
-      <p>
-        Installation was my favorite part of the project. I first looked at how the existing duct was mounted: a chain every meter or so. While simple, this wouldn’t work for the fan due to potential vibration.  
-        I measured the ceiling railing and designed two “A” shaped brackets with bends at the bottom to hold the fan securely. These were mounted to the railing and adjusted so the fan connected seamlessly to the duct. Duct tape was added to minimize air leaks and keep the connection tight.  
-        Finally, I wired the fan into the same outlet as the intake fans so that all fans would turn on and off together.
-      </p>
+    <!-- Installation -->
+    <section class="flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1 max-w-3xl">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-700">Installation</h2>
+        <p>
+          I designed two “A”-shaped brackets to mount the fan to the ceiling railing, accounting for vibration.  
+          After securing the fan to the brackets, I connected it to the existing duct using duct tape to prevent leaks.  
+          Finally, the fan was wired to the same outlet as the intake fans, ensuring synchronized operation.
+        </p>
+      </div>
+      <div class="flex-shrink-0">
+        <img src="WELDING EXHAUST FAN HANGER.jpg" alt="Welding fan mounting" class="w-96 h-64 object-cover rounded-xl shadow-lg">
+      </div>
     </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Results</h2>
-      <p>
-        After installation, I tested the system while welders were working. The airflow in the fume hood was significantly stronger, and the exhaust effectiveness was noticeably improved.  
-        This confirmed that the fan was properly balanced with the intake system, making the booth safer and more efficient.
-      </p>
-    </section>
-
-    <!-- Optional image grid if you add photos later -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Project Photos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-        <img src="WELDING EXHAUST FAN HANGER.jpg" alt="Welding Fan Hanger" class="w-80 h-60 object-cover rounded shadow-lg mx-auto">
-        <img src="WELDING EXHAUST FAN.jpg" alt="WElding Fan Installed" class="w-80 h-60 object-cover rounded shadow-lg mx-auto">
+    <!-- Results -->
+    <section class="bg-gray-100 rounded-xl p-8 shadow-sm flex flex-col md:flex-row-reverse items-center gap-10">
+      <div class="flex-1 max-w-3xl">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-700">Results</h2>
+        <p>
+          After testing the system during welding operations, the airflow in the fume hood was noticeably stronger.  
+          The exhaust fan balanced perfectly with the intake system, improving safety and overall efficiency in the welding booth.
+        </p>
+      </div>
+      <div class="flex-shrink-0">
+        <img src="WELDING EXHAUST FAN.jpg" alt="Welding fan in operation" class="w-96 h-64 object-cover rounded-xl shadow-lg">
       </div>
     </section>
 

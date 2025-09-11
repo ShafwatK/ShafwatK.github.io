@@ -3,46 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experiences - Shafwat Khan</title>
+  <title>Assembly Optimization - Shafwat Khan</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+
   <!-- Header -->
-<header class="relative p-20 bg-green-600 text-white flex items-center">
-  <!-- Centered title --> 
-  <h1 class="absolute left-1/2 transform -translate-x-1/2 text-2xl font-bold">
-    Assembly Optimization
-  </h1>
+  <header class="relative py-16 px-8 bg-gradient-to-r from-blue-600 to-blue-700 text-white flex items-center shadow-md">
+    <h1 class="absolute left-1/2 transform -translate-x-1/2 text-3xl font-bold tracking-wide">
+      Assembly Optimization
+    </h1>
+    <a href="PROJECTS.HTML" class="ml-auto border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-700 transition">
+      Back to Projects
+    </a>
+  </header>
 
-  <!-- Button on the right -->
-  <a href="PROJECTS.HTML" class="ml-auto bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-100">
-    Back to projects
-  </a>
-</header>
-<main class="p-6 text-black">
-  <p>
-    <strong style="font-size: 24px;">Introduction:</strong>  <br>
-    One of the biggest orders for Sable Metal was for a large number of doors.
-    The doors were to be assembled in the shop and then shipped out to the customer.
-    The existing assembly process was slow and inefficient, I was tasked with optimizing the process and documenting the steps so that it could be easily repeated.
-        <br>
+  <main class="p-8 max-w-6xl mx-auto space-y-16">
 
-    <strong style="font-size: 24px;">Documentations:</strong>  <br>
-    My process started with working closely with the assembly team to understand the existing process.
-    I took notes and pictures of each step, and later I created a detailed document outlining each step of the process as well as the time it took.
-    Through out the process I identified bottlenecks and areas for improvement.
-    One of the most prominent issues was the lack of aid for drilling. 
-    The assembly team had to hand measure every new hole, this was time consuming and prone to error.
-    The next biggest issue was the fact that the hardware that was installed was not the same dimensions as the ones on the CAD.
-        <br>
+    <!-- Introduction -->
+    <section class="flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1 max-w-3xl">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-700">Introduction</h2>
+        <p>
+          One of the largest orders for Sable Metal involved producing a significant number of doors.  
+          These doors were fully assembled in the shop before shipping.  
+          The existing assembly process was slow and inefficient, so I was tasked with optimizing it and documenting steps to ensure repeatability.
+        </p>
+      </div>
+      <div class="flex-shrink-0">
+        <img src="DOOR.jpg" alt="Doors being assembled in shop" class="w-96 h-64 object-cover rounded-xl shadow-lg">
+      </div>
+    </section>
 
-    <strong style="font-size: 24px;">Modifications:</strong>  <br>
-    After identifying the issues I started to work on solutions.
-    To solve the issue with the drilling I designed jigs that would be held against other parts of the door to allow the team to match drill.
-    
-    <br>
+    <!-- Documentation -->
+    <section class="bg-gray-100 rounded-xl p-8 shadow-sm flex flex-col md:flex-row-reverse items-center gap-10">
+      <div class="flex-1 max-w-3xl">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-700">Documentation</h2>
+        <p>
+          I closely observed and worked with the assembly team to understand their workflow.  
+          Notes and photos were taken for each step, and a detailed document was created outlining the full process, including time required.  
+          The SolidWorks drawing helped standardize the process.
+        </p>
+        <ul class="list-disc list-inside mt-4 text-gray-700">
+          <li>Hand-measuring every hole before drilling — slow and error-prone.</li>
+          <li>Hardware dimensions in the shop didn’t match CAD models, causing adjustments mid-process.</li>
+        </ul>
+      </div>
+      <div class="flex-shrink-0">
+        <img src="Assembly Drawing.jpg" alt="Process documentation notes" class="w-96 h-64 object-cover rounded-xl shadow-lg">
+      </div>
+    </section>
 
-    <strong style="font-size: 24px;">Results:</strong>  <br>
-    By the end of the modifications the assembly was optimized, cutting the total time from 4 and a half hours to 4 hours, taking 88% of the original time. 
-  </p>
-</main>
+    <!-- Modifications -->
+    <section class="flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1 max-w-3xl">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-700">Modifications</h2>
+        <p>
+          To solve the drilling problem, I designed custom jigs that aligned with other door components.  
+          These jigs allowed precise match drilling, eliminating repeated manual measurements and speeding up the process.
+        </p>
+      </div>
+      <div class="flex flex-row gap-6">
+        <img src="Custom Jig.jpg" alt="Custom jig design" class="w-72 h-60 object-cover rounded-xl shadow-lg">
+        <img src="Custom Holes.jpg" alt="Custom hole jig in action" class="w-72 h-60 object-cover rounded-xl shadow-lg">
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section class="bg-gray-100 rounded-xl p-8 shadow-sm flex flex-col md:flex-row-reverse items-center gap-10">
+      <div class="flex-1 max-w-3xl">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-700">Results</h2>
+        <p>
+          Implementing the modifications significantly improved the assembly process.  
+          Total assembly time decreased from 4.5 hours to 4 hours — roughly a <strong>12%</strong> improvement.  
+          Standardized documentation ensured future teams could follow the optimized process without confusion.
+        </p>
+      </div>
+      <div class="flex-shrink-0">
+        <img src="Stacked and finished.jpg" alt="Finished optimized assembly process" class="w-96 h-64 object-cover rounded-xl shadow-lg">
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

@@ -9,11 +9,13 @@
   <!-- TailwindCSS CDN for utility-first styling -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#4a6b8c] text-gray-900 font-sans"> <!--Colour for background here-->
+<body class="bg-[#4a6b8c] text-gray-900 font-sans">
 
   <!-- HEADER -->
-  <header class="p-20 bg-[#0D1B2A] text-white flex justify-between items-center"> <!-- Title card here -->
-    <h1 class="text-[75px] font-bold absolute left-1/2 transform -translate-x-1/2 ">Projects</h1>
+  <header class="p-20 bg-[#0D1B2A] text-white flex justify-between items-center relative">
+    <h1 class="text-[75px] font-bold absolute left-1/2 transform -translate-x-1/2">
+      Projects
+    </h1>
     <a href="index.html" 
        class="ml-auto bg-white text-yellow-600 px-4 py-2 rounded hover:bg-gray-100">
        Back to Home
@@ -21,89 +23,78 @@
   </header>
 
   <!-- MAIN CONTENT: Projects Section -->    
-<main class="p-8 grid grid-cols-3 gap-x-8 gap-y-8 bg-[#4a6b8c] justify-center"> <!--Colour for table here-->
-    
-  <!-- PROJECT 1 CARD -->
-  <a href="Slatwall.html" class="block">
-    <div class="border border-[#CBD5E1] rounded-lg shadow-md transition-shadow duration-300
-                bg-[#F1F5F9] hover:shadow-lg cursor-pointer aspect-[5/1] flex flex-col p-4">
-      <h2 class="text-[30px] text-[#0F172A] font-bold justify-center">Slatwall</h2>
-      <p class="text-[#64748B] flex-grow">
-        <div class="flex justify-center">
-          <img src="IRL SLATWALL.jpg" alt="Slatwall Design" class="w-[500px] h-auto rounded shadow-lg justify-center">
+  <main class="p-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 bg-[#4a6b8c]">
+
+    <!-- PROJECT CARD TEMPLATE -->
+    <a href="Slatwall.html" class="block">
+      <div class="border border-[#CBD5E1] rounded-xl shadow-md transition-transform duration-300
+                  bg-[#F1F5F9] hover:shadow-xl hover:-translate-y-1 flex flex-col p-6">
+        <h2 class="text-2xl text-[#0F172A] font-bold mb-4 text-center">Slatwall</h2>
+        <div class="flex justify-center mb-4">
+          <img src="IRL SLATWALL.jpg" alt="Slatwall Design" class="w-[500px] max-w-full h-auto rounded shadow-lg">
         </div>
-        Designed and fabricated a custom slatwall to maximize space usage by using verticle space. Applied LEAN principles as well as the 6 sigmas in design process.
-      </p>
-    </div>
-  </a>
-
-    <!-- PROJECT 2 CARD -->
-
+        <p class="text-[#64748B] text-justify">
+          Designed and fabricated a custom metal slatwall to maximize vertical storage space.  
+          Applied LEAN and Six Sigma principles to improve organization, safety, and workflow efficiency.
+        </p>
+      </div>
+    </a>
 
     <a href="Welding Fan.html" class="block">
-    <div class="border border-[#CBD5E1] rounded-lg shadow-md transition-shadow duration-300
-                bg-[#F1F5F9] hover:shadow-lg cursor-pointer aspect-[5/1] flex flex-col p-4">
-      <h2 class="text-[#0F172A] font-bold flex-shrink-0">Welding Fan</h2>
-      <p class="text-[#64748B] flex-grow">
-        <div class="flex justify-center">
-          <img src="WELDING EXHAUST FAN.jpg" alt="WELDING EXHAUST FAN" class="w-98 h-auto rounded shadow-lg">
+      <div class="border border-[#CBD5E1] rounded-xl shadow-md transition-transform duration-300
+                  bg-[#F1F5F9] hover:shadow-xl hover:-translate-y-1 flex flex-col p-6">
+        <h2 class="text-2xl text-[#0F172A] font-bold mb-4 text-center">Welding Fan</h2>
+        <div class="flex justify-center mb-4">
+          <img src="WELDING EXHAUST FAN.jpg" alt="Welding Exhaust Fan" class="w-[500px] max-w-full h-auto rounded shadow-lg">
         </div>
-          Calculated the CFM requirements of a exhaustion fan for a welding booth.
-          Picked out an appropriate fan, designed a custom mount for it, fabricated, and installed it.
+        <p class="text-[#64748B] text-justify">
+          Calculated CFM requirements for proper welding booth ventilation.  
+          Selected an appropriate fan, designed a custom mounting system, and oversaw fabrication and installation.
         </p>
       </div>
     </a>
-
-    <!-- PROJECT 3 CARD -->
-
 
     <a href="Laser Cable Management.html" class="block">
-    <div class="border border-[#CBD5E1] rounded-lg shadow-md transition-shadow duration-300
-                bg-[#F1F5F9] hover:shadow-lg cursor-pointer aspect-[5/1] flex flex-col p-4">
-      <h2 class="text-[#0F172A] font-bold mb-2 flex-shrink-0">Laser Cable Management</h2>
-      <p class="text-[#64748B] flex-grow">
-        <div class="flex justify-center">
-          <img src="Laser Cable SOLIDWORKS.jpg" alt="Laser Cables" class="w-[500px] h-auto rounded shadow-lg justify-center">
+      <div class="border border-[#CBD5E1] rounded-xl shadow-md transition-transform duration-300
+                  bg-[#F1F5F9] hover:shadow-xl hover:-translate-y-1 flex flex-col p-6">
+        <h2 class="text-2xl text-[#0F172A] font-bold mb-4 text-center">Laser Cable Management</h2>
+        <div class="flex justify-center mb-4">
+          <img src="Laser Cable SOLIDWORKS.jpg" alt="Laser Cable Management" class="w-[500px] max-w-full h-auto rounded shadow-lg">
         </div>
-          Unmaintained cable management was causing workflow inefficiencies in the laser cutting section at Sable Metal. 
-          Designed and fabricated a custom cable management system to improve workflow and safety.
-          Considered manufacturability as well as ease and price of assembly in the design process.
+        <p class="text-[#64748B] text-justify">
+          Designed and implemented a custom cable management system for the laser cutting section.  
+          Improved workflow efficiency and safety while considering manufacturability, assembly ease, and cost.
         </p>
       </div>
     </a>
-
-        <!-- PROJECT 4 CARD -->
 
     <a href="Assembly Optimization.html" class="block">
-    <div class="border border-[#CBD5E1] rounded-lg shadow-md transition-shadow duration-300
-                bg-[#F1F5F9] hover:shadow-lg cursor-pointer aspect-[5/1] flex flex-col p-4">
-      <h2 class="text-[#0F172A] font-bold mb-2 flex-shrink-0"> Assembly Optimization</h2>
-      <p class="text-[#64748B] flex-grow">
-        <div class="flex justify-center">
-          <img src="DOOR.jpg" alt="Arduino Prototype" class="w-[500px] h-[auto] rounded shadow-lg justify-center">
+      <div class="border border-[#CBD5E1] rounded-xl shadow-md transition-transform duration-300
+                  bg-[#F1F5F9] hover:shadow-xl hover:-translate-y-1 flex flex-col p-6">
+        <h2 class="text-2xl text-[#0F172A] font-bold mb-4 text-center">Assembly Optimization</h2>
+        <div class="flex justify-center mb-4">
+          <img src="DOOR.jpg" alt="Assembly Optimization" class="w-[500px] max-w-full h-auto rounded shadow-lg">
         </div>
-          Documented the assembly process of several different products at Sable Metal, most of them being doors.
-          Created instructions and detailed assembly drawings to help maximize efficiency and reduce errors.
-          Modified existing parts in order to help with efficiency in assembly.
+        <p class="text-[#64748B] text-justify">
+          Documented and standardized the assembly process of high-volume products, primarily doors.  
+          Produced detailed instructions and drawings to reduce errors, while modifying parts to increase efficiency.
         </p>
       </div>
     </a>
 
-        <!-- PROJECT 5 CARD -->
-
-        <a href="Arduino Shop Alarms.html" class="block">
-    <div class="border border-[#CBD5E1] rounded-lg shadow-md transition-shadow duration-300
-                bg-[#F1F5F9] hover:shadow-lg cursor-pointer aspect-[5/1] flex flex-col p-4">
-      <h2 class="text-[#0F172A] font-bold mb-2 flex-shrink-0"> Arduino Shop Alarm </h2>
-      <p class="text-[#64748B] flex-grow">
-        <div class="flex justify-center">
-          <img src="Little Arduino Brain box.jpg" alt="Arduino Prototype" class="w-[500px] h-[500px] rounded shadow-lg justify-center">
+    <a href="Arduino Shop Alarms.html" class="block">
+      <div class="border border-[#CBD5E1] rounded-xl shadow-md transition-transform duration-300
+                  bg-[#F1F5F9] hover:shadow-xl hover:-translate-y-1 flex flex-col p-6">
+        <h2 class="text-2xl text-[#0F172A] font-bold mb-4 text-center">Arduino Shop Alarm</h2>
+        <div class="flex justify-center mb-4">
+          <img src="Little Arduino Brain box.jpg" alt="Arduino Shop Alarm" class="w-[500px] max-w-full h-auto rounded shadow-lg">
         </div>
-        Replaced the existing shop alarm system at Sable Metal with a custom Arduino based system.
-        The existing system was old and broken, the new system is more reliable and easier to use, it also allows for remote control.
+        <p class="text-[#64748B] text-justify">
+          Replaced the shop’s outdated alarm system with a custom Arduino-based solution.  
+          The new system is more reliable, cost-effective, and includes remote-control functionality.
+        </p>
       </div>
     </a>
-
 
   </main>
 

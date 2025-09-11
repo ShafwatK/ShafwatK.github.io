@@ -3,70 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experiences - Shafwat Khan</title>
+  <title>Slatwall - Shafwat Khan</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
-  <!-- Header -->
-  <header class="relative p-20 bg-green-600 text-white flex items-center">
-    <!-- Centered title --> 
-    <h1 class="absolute left-1/2 transform -translate-x-1/2 text-2xl font-bold">
-      Slatwall
-    </h1>
+<body class="bg-gray-50 text-gray-900 font-sans leading-loose">
 
-    <!-- Button on the right -->
-    <a href="PROJECTS.HTML" class="ml-auto bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-100">
-      Back to projects
+  <!-- Header -->
+  <header class="relative py-16 px-8 bg-gradient-to-r from-green-600 to-green-700 text-white flex items-center shadow-md">
+    <h1 class="absolute left-1/2 transform -translate-x-1/2 text-3xl font-bold tracking-wide">
+      Slatwall Project
+    </h1>
+    <a href="PROJECTS.HTML" class="ml-auto border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-green-700 transition">
+      Back to Projects
     </a>
   </header>
 
-  <main class="p-6 text-black max-w-5xl mx-auto leading-relaxed space-y-6">
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Introduction</h2>
-      <p>
-        The company had recently created its welding section, which was in desperate need of upgrades. I was tasked with talking to the welding team and understanding their needs. One of the biggest issues was the lack of space to store tools and equipment. Their space was very disorganized and being used inefficiently.  
-        I learned that a very effective way to optimize space is to use vertical storage, which is when I decided to make use of the wall and create a slatwall and a slatwall shelf.
-      </p>
-    </section>
+  <!-- Main Content -->
+  <main class="p-8 max-w-6xl mx-auto space-y-16">
 
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Planning Process</h2>
-      <p>
-        First, I looked into existing slatwall designs around the shop and online, trying to find creative solutions that would be cheap and easy to implement. I noticed that all the slatwalls around the shop were made of wood. This would not be a good idea for the welding section, as wood and heat typically do not mix well.  
-        I decided to use metal for the slatwall and shelf. This would be more durable and resistant to the heat and sparks from welding. I found several metal slatwall designs online, but they were very expensive, so I realized I could make my own design that would be cheaper and give me more flexibility.  
-        To simplify manufacturing, I changed the design from the complex folded style commonly used to a simpler flat sheet of metal with slots cut into it. These slots would allow accessories to be mounted using a hook design. This made the slatwall much easier and more cost-effective to produce.
-      </p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-        <img src="Slatwall_online.jpg" alt="Slatwall found online" class="w-80 h-60 object-cover rounded shadow-lg mx-auto">
-        <img src="Slatwall_side.jpg" alt="Sideview of slatwall" class="w-80 h-60 object-cover rounded shadow-lg mx-auto">
+    <!-- Introduction -->
+    <section class="flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1 max-w-3xl">
+        <h2 class="text-3xl font-semibold mb-4 text-green-700">Introduction</h2>
+        <p>
+          The company had recently created its welding section, which was in desperate need of upgrades.  
+          One of the biggest issues was the lack of space to store tools and equipment — the area was disorganized and inefficient.  
+          I spoke with the welding team to understand their needs and quickly realized that vertical storage would be the most effective solution.  
+          This led to the design and installation of a custom slatwall and shelf system.
+        </p>
       </div>
-
-      <p class="mt-4">
-        The problem with existing slatwall designs is that they rely on a folded structure that is difficult to manufacture. My simplified design allowed for more cost-effective production while still meeting strength requirements.  
-        I determined the slot dimensions based on available wall space in the welding stations. Using force simulation software, I tested different spacing and chose the layout that balanced strain across the wall and shelf. My final design is shown below.
-      </p>
-
-      <div class="flex justify-center mt-4">
-        <img src="Screenshot 2025-08-11 225222.jpg" alt="My design of the slatwall" class="w-80 h-60 object-cover rounded shadow-lg">
+      <div class="flex-shrink-0">
+        <img src="Old Slatwall.jpg" alt="Sideview of slatwall" class="w-96 h-64 object-cover rounded-xl shadow-lg">
       </div>
     </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Assembly</h2>
-      <p>
-        The assembly plan was simple: screw 1/4-20 bolts into each corner of the slatwall. The bolts, 2.5 inches long, would go through the slatwall and extend out the other side of the wall, allowing another slatwall to be mounted on the opposite side.  
-        Execution, however, was not as straightforward. Drilling the holes required the drill to be perfectly straight and aligned; otherwise, the screws would go in crooked, making it difficult to hang the opposite slatwall. Despite my efforts, the holes were slightly misaligned. But what’s the fun in engineering if everything goes according to plan?  
-        To compensate, I drilled with a slightly larger bit to allow for margin of error. Washers were added on both ends for extra support. Using a hammer, I carefully bent the screws to align them with the opposite slatwall. Since the holes were slightly larger than the screws, the bolts could still be removed if needed, despite the bends.
-      </p>
+    <!-- Planning Process -->
+    <section class="bg-gray-100 rounded-xl p-8 shadow-sm">
+      <div class="flex flex-col gap-8">
+        <h2 class="text-3xl font-semibold text-green-700">Planning Process</h2>
+        <p>
+          I first researched existing slatwall designs in the shop and online, aiming for something both cost-effective and easy to manufacture.  
+          Most were made of wood, which wasn’t suitable for the welding environment due to heat and sparks.  
+          Instead, I opted for a custom metal design that would be durable, heat-resistant, and flexible.  
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <img src="Slatwall_online.jpg" alt="Slatwall found online" class="w-full h-64 object-cover rounded-xl shadow-lg">
+          <img src="Slatwall_side.jpg" alt="Sideview of slatwall" class="w-full h-64 object-cover rounded-xl shadow-lg">
+        </div>
+
+        <p>
+          Unlike complex folded structures, I simplified the design to a flat metal sheet with precision-cut slots.  
+          This reduced costs while maintaining strength and ease of use.  
+          Using simulation software, I optimized slot spacing to balance strain across the wall and shelf.  
+          Below is the final SolidWorks model of my design.
+        </p>
+
+        <div class="flex justify-center">
+          <img src="Screenshot 2025-08-11 225222.jpg" alt="My design of the slatwall" class="w-96 h-64 object-cover rounded-xl shadow-lg">
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Final Result</h2>
-      <p>
-        With the slatwall installed, I was able to start designing the slatwall shelf. Instead of following a generic shelf design, I focused on creating custom pegs for each tool to maximize vertical space usage. This approach aligned with LEAN principles and made the welding station more efficient and organized.
-      </p>
+    <!-- Assembly -->
+    <section class="flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1 max-w-3xl">
+        <h2 class="text-3xl font-semibold mb-4 text-green-700">Assembly</h2>
+        <p>
+          The assembly plan was simple: secure the slatwall with 1/4-20 bolts through each corner, extending to mount another slatwall on the opposite side.  
+          Execution, however, introduced challenges — drilling required perfect alignment, and some holes were misaligned.  
+          To fix this, I used a slightly larger drill bit for tolerance, reinforced with washers, and carefully bent bolts with a hammer for alignment.  
+          This maintained both strength and removability despite small errors in drilling.  
+        </p>
+      </div>
     </section>
+
+    <!-- Final Result -->
+    <section class="bg-gray-100 rounded-xl p-8 shadow-sm">
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <div class="flex-1 max-w-3xl">
+          <h2 class="text-3xl font-semibold mb-4 text-green-700">Final Result</h2>
+          <p>
+            With the slatwall installed, I designed custom shelves and pegs tailored for each tool.  
+            This maximized vertical space usage, reduced clutter, and followed <strong>LEAN principles</strong> for workplace organization.  
+            The welding section became significantly more efficient and professional.  
+          </p>
+        </div>
+        <div class="flex-shrink-0">
+          <img src="Slatwall installed.jpg" alt="Installed slatwall in welding section" class="w-96 h-64 object-cover rounded-xl shadow-lg">
+        </div>
+      </div>
+    </section>
+
   </main>
 </body>
 </html>
