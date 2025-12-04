@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotic Cinema Arm - Shafwat Khan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans leading-relaxed">
+
+  <!-- Header -->
+  <header class="relative py-16 px-8 bg-gradient-to-r from-blue-600 to-blue-700 text-white flex items-center shadow-md">
+    <h1 class="absolute left-1/2 transform -translate-x-1/2 text-3xl font-bold tracking-wide">
+      Robotic Cinema Arm
+    </h1>
+
+    <!-- Button container -->
+    <div class="ml-auto flex space-x-4">
+      <a href="projects.html" class="border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-700 transition">
+        Back to Projects
+      </a>
+      <a href="index.html" class="border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-700 transition">
+        Back to Home
+      </a>
+    </div>
+  </header>
+
+  <main class="p-8 max-w-6xl mx-auto space-y-16">
+
+    <!-- Introduction -->
+    <section class="flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1 max-w-3xl">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-700">Introduction</h2>
+        <p>
+          This was a project to design a Robotic Cinema Arm as part of my University Design Course (MIE243). The project itself was super open ended, we get to decide on everything.
+        The main goal was to design a robotic arm that could move a camera smoothly for cinematic shots, this could be designed for any market, from professionals to hobbiests. 
+        We decideded to start looking into existing robotic arms to see what features they had and how they were designed, we could use that as inspiration for our own design specifications.
+        </p>
+      </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="bg-gray-100 rounded-xl p-8 shadow-sm flex flex-col md:flex-row-reverse items-center gap-10">
+      <div class="flex-1 max-w-3xl">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-700">Mechanical Design</h2>
+        <p>
+          After doing research on existing robotic arms, we started realising that it is quite an expensive field to get into. 
+          There seemed to be a major lack of beginner priced options, with most products being targeted towards professionals which made them very expensive.
+          We decided to design our arm to be more affordable, while still being able to achieve smooth cinematic motion. 
+          This means that our arm will not be capable of the insane feats that some of the professional ones have, 
+          but it will be a lot more reasonable for someone who is looking to get into this field.
+        </p>
+      </div>
+      <div class="flex-shrink-0">
+        <!-- INSERT RESEARCH IMAGE -->
+        <img src="Research names.jpg" alt="Names of stuff companies I looked into" class="w-96 h-64 object-cover rounded-xl shadow-lg">
+      </div>
+    </section>
+
+    <!-- Electronics & Control System -->
+    <section class="flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1 max-w-3xl">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-700">Mechanical Design Brainstorming</h2>
+        <p>
+          After the research was done, its time to start working on the actual design. We started by each making a candidate design, 
+          then we would discuss the pros and cons of each design and decide on a final one to move forward with. The final design was a combination of 
+          features from  all of the candidate designs. This included multiple rotational joints, a linearly actuating joint and an end effector for more precise rotations.
+
+        </p>
+      </div>
+      <div class="flex flex-row gap-6">
+        <!-- INSERT CONTROL SYSTEM IMAGES -->
+        <img src="Final Candidate design.jpg" alt="Candidate design" class="w-96 h-64 object-cover rounded-xl shadow-lg">
+      </div>
+    </section>
+
+    <!-- CADDING -->
+    <section class="bg-gray-100 rounded-xl p-8 shadow-sm flex flex-col md:flex-row-reverse items-center gap-10">
+    <div class="flex-1">
+        <h2 class="text-3xl font-semibold mb-4 text-blue-700">The Final CAD</h2>
+        <p>
+        Now, time for the real deal, the CAD. This model was built using solidworks, starting off with a very rough model. Using basic rectangular and cylindrical shapes to get a feel for the size and proportions of the design.
+        From there, I started refining the parts, adding fillets, chamfers, and other features to make it look more realistic. The parts were then adjusted to make sure everything fit together nicely.
+        Once the fitting was verified, it was time to make the linkages. Each linakge was designed so that it could be disassemeled and reassembled fairly easily. This is important for maintenance and repairs.
+        Finally, the entire assembly was put together and checked for any interferences. Once everything was put into place it was time to install the motors. Lukily most of the motors already had CAD models available.
+        I made couplers for each motor so that it could connect to the gearboxes and linkages properly, the gearboxes were typically found on RevRobotics and it came with a premade CAD model.
+        </p>
+    </div>
+
+    <div class="flex-shrink-0">
+        <img src="Robotic Cinema Arm.png" alt="Final CAD of the model" class="w-96 rounded-xl shadow-lg">
+    </div>
+    </section>
+
+
+  </main>
+
+</body>
+</html>
